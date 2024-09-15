@@ -70,7 +70,7 @@ export class LivrosComponent implements OnInit {
       this.livrosService.AtualizarLivro(livro).subscribe(resultado =>{
         this.visibilidadeFormulario = false;
         this.visibilidadeTable = true;
-         alert('Pessoa atualizada com sucesso');
+         alert('Livro atualizado com sucesso');
          this.livrosService.PegarTodosLivros().subscribe(registros => {
           this.livros = registros;
       })
@@ -80,7 +80,7 @@ export class LivrosComponent implements OnInit {
       this.livrosService.SalvarLivro(livro).subscribe(resultado =>{
        this.visibilidadeFormulario = false;
        this.visibilidadeTable = true;
-        alert('Pessoa inserida com sucesso');
+        alert('Livro inserido com sucesso');
         this.livrosService.PegarTodosLivros().subscribe(registros => {
          this.livros = registros;
         });
