@@ -1,0 +1,78 @@
+<div class="container p-5" *ngIf="visibilidadeTable">
+    <div class="border boder-light rounded p-5" >
+        <div>
+            <button type="button" class="btn btn-sm btn-segundary" (click)="ExibirFormularioCadastro()">
+                Novo livro
+            </button>
+        </div>
+    </div>
+
+    <hr/>
+
+    <table class="table table-striped table-hover table-sm">
+        <tr class="thead-light">
+            <th class="me-3">Titulo Livro</th>
+            <th class="me-3">Escritora</th>
+            <th class="me-3">Paginas</th>
+            <th class="me-3">Sinopse</th>
+            <th class="me-3">Ações</th>
+        </tr>
+        
+        <tr *ngFor="let livro of livros">
+            <td>{{livro.tituloLivro}}</td>
+            <td>{{livro.escritora}}</td>
+            <td>{{livro.paginas}}</td>
+            <td>{{livro.sinopse}}</td>
+            <td>
+                <button type="button" class="btn btn-sm btn btn-outline-info" (click)="ExibirFormularioAtualizacao(livro.livroId)">Atualizar</button>
+                <button type="button" class="btn btn-sm btn btn-outline-danger" (click)="ExcluirLivro(livro.livroId)">Excluir</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="container p-5" *ngIf="visibilidadeFormulario">
+    <div class="row">
+        <div class="col-6 border boder-light rounded p-5 shadow" *ngIf="formulario">
+            <h6>{{tituloFormulario}}</h6>
+            <hr/>
+            <form [formGroup]="formulario" (ngSubmit)="EnviarFormulario()">
+
+                <div class="form-group" >
+                    <label> Nome do livro</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="tituloLivro"/>
+                </div>
+
+                <div class="form-group">
+                    <label> Escritora</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="escritora"/>
+                </div>
+
+                <div class="form-group">
+                    <label> Paginas</label>
+                    <input type="number" class="form-control form-control-sm" formControlName="paginas"/>
+                </div>
+
+                <div class="form-group">
+                    <label> Sinopse</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="sinopse"/>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <button type="submit" class="btn btn-sm btn-outline-segundary">Salvar</button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-sm btn-light" (click)="Voltar()">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
