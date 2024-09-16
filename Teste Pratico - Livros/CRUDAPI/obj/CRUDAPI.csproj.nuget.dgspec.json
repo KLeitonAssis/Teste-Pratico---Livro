@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\CRUDAPI\\CRUDAPI.csproj": {}
+    "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\crudapi\\CRUDAPI.csproj": {}
   },
   "projects": {
-    "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\CRUDAPI\\CRUDAPI.csproj": {
+    "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\crudapi\\CRUDAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\CRUDAPI\\CRUDAPI.csproj",
+        "projectUniqueName": "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\crudapi\\CRUDAPI.csproj",
         "projectName": "CRUDAPI",
-        "projectPath": "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\CRUDAPI\\CRUDAPI.csproj",
+        "projectPath": "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\crudapi\\CRUDAPI.csproj",
         "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\CRUDAPI\\obj\\",
+        "outputPath": "C:\\Git\\Teste-Pratico---Livro\\Teste Pratico - Livros\\crudapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
